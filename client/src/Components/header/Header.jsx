@@ -1,5 +1,8 @@
 import React from 'react';
 import './header.css'
+import { Link } from 'react-router-dom';
+import SignupForm from '../Signup';
+// import LoginForm from '../Login';
 
 const Header = () => {
   return (
@@ -11,7 +14,7 @@ const Header = () => {
             <li className='mx-3 cursor-pointer text-lg'>Home</li>
             <li className='mx-3 cursor-pointer text-lg'>About</li>
             <li className='mx-3 cursor-pointer text-lg'>Contact</li>
-            <button className='sing-btn mx-5'>SingUp</button>
+            <li><Link to='/signup'>Singup</Link></li>
           </ul>
         </nav>
       </div>
